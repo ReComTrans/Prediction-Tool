@@ -1,0 +1,23 @@
+set dash_folder=%userprofile%\enter path to ReComTrans-HS\src z.B. set dash_folder=%userprofile%\Documents\ReComTrans-Public\src
+
+::if anaconda is installed
+
+::variable to folder where anaconda3 is installed
+set anaconda_folder=%userprofile%\anaconda3
+
+::starting the anaconda command line interface
+call %anaconda_folder%\Scripts\activate.bat %anaconda_folder%
+
+::
+
+cd %dash_folder%
+
+cd ..
+
+pip install -r requirements.txt
+
+cd %dash_folder%
+
+python app_dash.py 
+
+pause

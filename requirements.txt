@@ -1,0 +1,14 @@
+dash
+dash-bootstrap-components
+pandas>=2
+dash[diskcache]
+scikit-learn
+statsmodels
+tscv
+xlsxwriter
+openpyxl 
+dill==0.3.5
+pmdarima 
+xgboost
+a2wsgi
+uvicorn

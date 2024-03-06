@@ -17,6 +17,6 @@ EXPOSE 3001
 COPY /src /usr/src
 COPY /Daten /usr/Daten
 
-CMD ["uvicorn", "--port", "3001", "app_dash:server"]
+CMD ["uvicorn", "--port", "3001", "--host", "0.0.0.0", "app_dash:server"]
 # CMD ["python", "app_dash.py"] # use this for flask instead of uvicorn
 
